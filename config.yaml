@@ -1,0 +1,179 @@
+cocitation/cora:
+  hidden: 512
+  dropout: 0.5
+  lr: 0.001
+  epochs: 500
+
+  T_attr: 4
+  alpha_attr: 0.45
+
+  beta_attr: 0.5
+  gamma_dyn: 1.0
+  gamma_bal: 1.5
+  gamma_rec: 0.5
+  gamma_kl: 0.7
+  eta: 0.1
+  fusion_start_epoch: 50
+  lambda_cand: 0.2
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 60
+  tau_p: 0.05
+  lambda_z: 0.2
+  lambda_a: 1.5
+
+
+  gamma_attr: 1.0
+
+cocitation/citeseer:
+  hidden: 512
+  dropout: 0.2
+  lr: 0.0005
+  epochs: 600
+  T_attr: 2
+  alpha_attr: 0.5
+  beta_attr: 0.2
+  gamma_dyn: 5.5
+  gamma_bal: 0.5
+  gamma_rec: 0.2
+  gamma_kl: 0.2
+  eta: 0.1
+  fusion_start_epoch: 30
+  lambda_cand: 0.1
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 50
+  tau_p: 0.05
+  lambda_z: 0.2
+  lambda_a: 1.0
+  gamma_attr: 1.5
+
+cocitation/pubmed:
+  hidden: 516
+  dropout: 0.5
+  lr: 0.001
+  epochs: 300
+  T_attr: 4
+  alpha_attr: 0.3
+  beta_attr: 0.3
+  gamma_dyn: 4.0
+  gamma_bal: 0.0
+  gamma_rec: 2.0
+  gamma_kl: 0.5
+  eta: 0.001
+  fusion_start_epoch: 20
+  lambda_cand: 0.1
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 50
+  tau_p: 0.05
+  lambda_z: 1.0
+  lambda_a: 0.5
+  gamma_attr: 0.1
+
+zoo:
+  hidden: 512
+  dropout: 0.5
+  lr: 0.0001
+  epochs: 200
+  T_attr: 1
+  alpha_attr: 0.4
+  beta_attr: 0.1
+  gamma_dyn: 1.5
+  gamma_bal: 0.0
+  gamma_rec: 0.2
+  gamma_kl: 1.5
+  eta: 0.1
+  fusion_start_epoch: 50
+  lambda_cand: 0.1
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 60
+  tau_p: 0.05
+  lambda_z: 1.0
+  lambda_a: 0.5
+  gamma_attr: 0.2
+
+20newsW100:
+  hidden: 512
+  dropout: 0.5
+  lr: 0.0005
+  epochs: 100
+  T_attr: 2
+  alpha_attr: 0.2
+  beta_attr: 0.5
+  gamma_dyn: 0.5
+  gamma_bal: 0.1
+  gamma_rec: 0.2
+  gamma_kl: 0.3
+  eta: 0.2
+  fusion_start_epoch: 20
+  lambda_cand: 0.1
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 50
+  tau_p: 0.05
+  lambda_z: 1.0
+  lambda_a: 0.5
+  gamma_attr: 0.2
+
+Mushroom:
+  hidden: 516
+  dropout: 0.5
+  lr: 0.001
+  epochs: 200
+  T_attr: 2
+  alpha_attr: 0.3
+  beta_attr: 0.3
+  gamma_dyn: 0.5
+  gamma_bal: 0.2
+  gamma_rec: 0.01
+  gamma_kl: 0.2
+  eta: 0.2
+  fusion_start_epoch: 50
+  lambda_cand: 0.1
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 60
+  tau_p: 0.05
+  lambda_z: 1.0
+  lambda_a: 0.5
+  gamma_attr: 0.2
+
+NTU2012:
+  hidden: 512
+  dropout: 0.5
+  lr: 0.001
+  epochs: 200
+  T_attr: 3
+  alpha_attr: 0.3
+  beta_attr: 0.2
+  gamma_dyn: 1.0
+  gamma_bal: 0.2
+  gamma_rec: 0.5
+  gamma_kl: 0.5
+  eta: 0.2
+  fusion_start_epoch: 20
+  lambda_cand: 0.2
+  rho_enc: 0.05
+  encoder_blend_start_epoch: 50
+  tau_p: 0.05
+  lambda_z: 1.0
+  lambda_a: 0.5
+  gamma_attr: 2.0
+
+ModelNet40:
+  hidden: 512
+  dropout: 0.5
+  lr: 0.001
+  epochs: 200
+  T_attr: 2
+  alpha_attr: 0.4
+  beta_attr: 0.5
+  gamma_dyn: 5.0
+  gamma_bal: 0.4
+  gamma_rec: 0.3
+  gamma_kl: 0.1
+  eta: 0.0
+  fusion_start_epoch: 0
+  lambda_cand: 0.1
+  rho_enc: 0.1
+  encoder_blend_start_epoch: 30
+  tau_p: 0.1
+  lambda_z: 1.0
+  lambda_a: 0.5
+  gamma_attr: 0.6
