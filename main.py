@@ -343,8 +343,9 @@ def ncut_loss(Y_hat, A_dyn, d_pi_stable):
 
     StAS = torch.mm(Y_hat.t(), AS)
     cut_mat = vol_mat - StAS
-    identity = torch.eye(num_clusters).to(device)
-    loss_dyn = torch.trace(torch.linalg.pinv(vol_mat + 1e-4 * identity) @ cut_mat)
+    identity = torch.eye(num_clusters, device=device, dtype=Y_hat.dtype)
+    regularized_vol = vol_mat + 1e-4 * identity
+    loss_dyn = torch.trace(torch.linalg.solve(regularized_vol, cut_mat))
     return loss_dyn
 
 
