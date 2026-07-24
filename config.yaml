@@ -168,7 +168,7 @@ ModelNet40:
   gamma_bal: 0.4
   gamma_rec: 0.3
   gamma_kl: 0.1
-  eta: 0.0
+  eta: 0.1
   fusion_start_epoch: 0
   lambda_cand: 0.1
   rho_enc: 0.1
