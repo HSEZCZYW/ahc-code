@@ -55,7 +55,7 @@ cocitation/pubmed:
   alpha_attr: 0.3
   beta_attr: 0.3
   gamma_dyn: 4.0
-  gamma_bal: 0.0
+  gamma_bal: 0.1
   gamma_rec: 2.0
   gamma_kl: 0.5
   eta: 0.001
@@ -77,7 +77,7 @@ zoo:
   alpha_attr: 0.4
   beta_attr: 0.1
   gamma_dyn: 1.5
-  gamma_bal: 0.0
+  gamma_bal: 0.1
   gamma_rec: 0.2
   gamma_kl: 1.5
   eta: 0.1
