@@ -4,7 +4,7 @@
 
 This repository contains the implementation of the proposed attributed hypergraph clustering framework. The method jointly learns node representations, clustering assignments, and clustering-adaptive incidence contributions under dual-view normalized-cut optimization. It uses a fixed structure-attribute prior graph as complementary guidance and refines node-hyperedge memberships in the original incidence space.
 
-![Framework](framework.png)
+![Framework](framework_01.png)
 
 Code is available under the root folder.
 The dataset archive is provided as `dataset.zip`.
